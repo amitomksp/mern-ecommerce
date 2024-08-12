@@ -152,7 +152,7 @@ server.post("/create-payment-intent", async (req, res) => {
 
 // TODO: we will capture actual order after deploying out server live on public URL
 
-const endpointSecret = "whsec_0e1456a83b60b01b3133d4dbe06afa98f384c2837645c364ee0d5382f6fa3ca2";
+const endpointSecret = 'whsec_abc2b2fee7fc0ba4a976f3fc6a6169eb4bbf3c8e4864b0bde68df933d7695be1';
 
 server.post('/webhook', express.raw({type: 'application/json'}), (request, response) => {
   const sig = request.headers['stripe-signature'];
