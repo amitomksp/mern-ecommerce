@@ -128,7 +128,7 @@ passport.deserializeUser(function (user, cb) {
 
 
 // This is your test secret API key.
-const stripe = require("stripe")('sk_test_51N5NLVSF2Mo4AGVvozBmb6d5td4kq0lexk43naVyOdmdzLoO4g8LLDsCFc7pT08pUjBesL0G95eP8Xv95kbOaRgU00qrTMpPnY');
+const stripe = require("stripe")('sk_test_51PlwRo06A1aTZAaSmxLMPtew7RCbZWPk8CXp2CmJ9cAwu9DaYJDKrrlsX5Ywu4FTQKaL86oscAgUXz6JSz6BbiUk00MHbqXAx2');
 
 
 server.post("/create-payment-intent", async (req, res) => {
